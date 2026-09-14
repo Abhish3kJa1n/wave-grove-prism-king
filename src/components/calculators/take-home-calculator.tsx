@@ -168,15 +168,13 @@ export function TakeHomeCalculator() {
 
       <Education>
         <p>
-          2026 federal brackets and standard deductions follow IRS Rev. Proc. 2025-32:
-          $16,100 single / $32,200 married filing jointly / $24,150 head of household.
-          Social Security is 6.2% up to the $184,500 wage base; Medicare is 1.45% plus
-          0.9% Additional Medicare Tax above $200,000 ($250,000 joint).
+          This calculator estimates 2026 federal income tax, Social Security, Medicare, and simplified state income tax. Federal brackets and standard deductions follow IRS Rev. Proc. 2025-32 ($16,100 single / $32,200 married filing jointly / $24,150 head of household). Social Security is 6.2% up to the $184,500 wage base; Medicare is 1.45% plus the 0.9% Additional Medicare Tax above $200,000 ($250,000 joint).
         </p>
         <p>
-          State figures are simplified 2026 estimates (flat rates or condensed brackets)
-          and omit local taxes such as New York City or Maryland counties. Use them for
-          planning, not for filing.
+          State figures are simplified 2026 estimates (flat rates or condensed brackets) and deliberately omit most local income taxes such as New York City or certain Maryland counties. Pre-tax contributions (401(k), traditional IRA, HSA, etc.) reduce taxable income and are reflected when you enter them.
+        </p>
+        <p>
+          Use the results for planning a housing budget from net pay. Do not use them for tax filing — actual withholding, credits, and local taxes can change the final number significantly. Confirm important figures with a tax professional or your payroll provider.
         </p>
       </Education>
     </section>
