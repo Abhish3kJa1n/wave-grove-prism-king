@@ -1,0 +1,76 @@
+import { b as require_jsx_runtime, v as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { r as SITE } from "./router-B4hmSBMT.mjs";
+import { t as SiteShell } from "./site-shell-BN6DhJBj.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-Bplg-fGr.js
+var import_jsx_runtime = require_jsx_runtime();
+function AboutPage() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SiteShell, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
+		className: "mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16",
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+				className: "text-sm font-medium text-primary",
+				children: "About"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
+				className: "mt-2 text-4xl font-semibold tracking-tight",
+				children: "Why Wellstead exists"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "mt-8 space-y-5 text-base leading-relaxed text-muted-foreground",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [SITE.name, " is a small set of US housing calculators: monthly mortgage payment, home affordability, and take-home pay after federal and state taxes. The aim is a calm, accurate planning surface — large inputs, clear results, and no account required."] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "Calculations run in your browser. We do not underwrite loans, collect applications, or sell personal financial data. If a figure looks useful, take it to a lender, tax professional, or housing counselor before you act." }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						className: "pt-4 text-xl font-semibold text-foreground",
+						children: "2026 assumptions"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+						className: "list-disc space-y-2 pl-5",
+						children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Default 30-year fixed rate of 6.76%, the Freddie Mac Primary Mortgage Market Survey average for the week of September 10, 2026. Enter the rate you were quoted." }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Federal income tax uses 2026 brackets and standard deductions from IRS Rev. Proc. 2025-32. Social Security wage base is $184,500." }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "Property tax defaults to 1.1% of home value. Insurance defaults to $1,800 a year. PMI of 0.55% applies when the down payment is under 20%." }),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "State income tax uses simplified 2026 structures. Local taxes are omitted." })
+						]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						className: "pt-4 text-xl font-semibold text-foreground",
+						children: "How to use the tools"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+						"Start with the",
+						" ",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/",
+							className: "text-primary underline-offset-4 hover:underline",
+							children: "mortgage payment calculator"
+						}),
+						" ",
+						"if you already have a loan amount. Use affordability if you are still sizing a budget, and take-home pay if you want net income rather than gross. Share results from any calculator, or reset to the defaults."
+					] }),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+						"Read the",
+						" ",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/disclaimer",
+							className: "text-primary underline-offset-4 hover:underline",
+							children: "disclaimer"
+						}),
+						" ",
+						"and",
+						" ",
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/privacy",
+							className: "text-primary underline-offset-4 hover:underline",
+							children: "privacy policy"
+						}),
+						" ",
+						"before relying on any number."
+					] })
+				]
+			})
+		]
+	}) });
+}
+//#endregion
+export { AboutPage as component };

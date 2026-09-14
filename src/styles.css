@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-background: #f7f9fc;
+  --color-foreground: #122033;
+  --color-card: #ffffff;
+  --color-card-foreground: #122033;
+  --color-muted: #eef2f7;
+  --color-muted-foreground: #5c6b7a;
+  --color-primary: #2c6ecb;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #e7f0fb;
+  --color-secondary-foreground: #1d4f9a;
+  --color-accent: #e7f0fb;
+  --color-accent-foreground: #1d4f9a;
+  --color-border: #e2e8f0;
+  --color-ring: #2c6ecb;
+  --color-input: #d8e0ea;
+  --color-destructive: #b42318;
+  --color-paper: #f7f9fc;
+  --color-ink: #122033;
+  --color-soft: #5c6b7a;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 1.75rem;
+
+  --shadow-card:
+    0 0 0 1px rgb(18 32 51 / 0.05),
+    0 1px 2px rgb(18 32 51 / 0.04),
+    0 10px 28px rgb(18 32 51 / 0.06);
+  --shadow-card-hover:
+    0 0 0 1px rgb(18 32 51 / 0.07),
+    0 1px 2px rgb(18 32 51 / 0.05),
+    0 14px 32px rgb(18 32 51 / 0.08);
+  --shadow-result:
+    0 0 0 1px rgb(44 110 203 / 0.08),
+    0 12px 32px rgb(44 110 203 / 0.1);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@utility tabular-stat {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "US Mortgage Calculator (2026) | Payment, Affordability & Take-Home Pay",
+      "hasCanvas": false,
+      "bodyTextLen": 5391,
+      "bodyTextHash": "47c284ac1f10305077dab314eedd1c9c92ee1381d4f503c33794a74637799dfd",
+      "bodyTextPrefix": "Wellstead Calculators About United States · 2026 figures US mort",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "US Mortgage Calculator (2026) | Payment, Affordability & Take-Home Pay",
+      "hasCanvas": false,
+      "bodyTextLen": 5326,
+      "bodyTextHash": "af05664b42e9a02fd459e9eabe08ff97823c77b46d9f19e822685a1b37727581",
+      "bodyTextPrefix": "Wellstead Calculators About United States · 2026 figures US mort",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
