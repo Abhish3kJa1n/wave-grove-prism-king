@@ -24,47 +24,52 @@ function AboutPage() {
         <h1 className="mt-2 text-4xl font-semibold tracking-tight">Why Wellstead exists</h1>
         <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            {SITE.name} is a small set of US housing calculators: monthly mortgage
-            payment, home affordability, and take-home pay after federal and state
-            taxes. The aim is a calm, accurate planning surface — large inputs, clear
-            results, and no account required.
+            {SITE.name} is a free set of US housing and paycheck calculators. The goal is simple: give people clear, private tools to estimate a monthly mortgage payment, a realistic home price they can carry, and take-home pay after federal and state taxes — without requiring an account or selling their data.
           </p>
           <p>
-            Calculations run in your browser. We do not underwrite loans, collect
-            applications, or sell personal financial data. If a figure looks useful,
-            take it to a lender, tax professional, or housing counselor before you act.
+            All calculations run in your browser. We do not underwrite loans, collect loan applications, or sell personal financial information. The numbers are estimates for planning only. If a result looks useful, take it to a licensed lender, tax professional, or HUD-approved housing counselor before you make any decision.
           </p>
+
+          <h2 className="pt-4 text-xl font-semibold text-foreground">What the tools cover</h2>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>
+              <strong>Mortgage payment calculator</strong> — principal and interest, extra payments, total interest, and a year-by-year amortization summary.
+            </li>
+            <li>
+              <strong>Home affordability calculator</strong> — estimates a comfortable home price based on income, debts, down payment, DTI limits, property tax, insurance, and PMI.
+            </li>
+            <li>
+              <strong>Take-home pay calculator</strong> — 2026 federal income tax, Social Security, Medicare, and simplified state income tax so you can plan from net pay.
+            </li>
+          </ul>
+
           <h2 className="pt-4 text-xl font-semibold text-foreground">2026 assumptions</h2>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              Default 30-year fixed rate of 6.76%, the Freddie Mac Primary Mortgage
-              Market Survey average for the week of September 10, 2026. Enter the rate
-              you were quoted.
+              Default 30-year fixed rate of 6.76%, based on the Freddie Mac Primary Mortgage Market Survey average for mid-September 2026. Always enter the actual rate you were quoted.
             </li>
             <li>
-              Federal income tax uses 2026 brackets and standard deductions from IRS
-              Rev. Proc. 2025-32. Social Security wage base is $184,500.
+              Federal income tax uses 2026 brackets and standard deductions from IRS Rev. Proc. 2025-32. Social Security wage base is $184,500.
             </li>
             <li>
-              Property tax defaults to 1.1% of home value. Insurance defaults to $1,800
-              a year. PMI of 0.55% applies when the down payment is under 20%.
+              Property tax defaults to 1.1% of home value (a common U.S. average). Homeowners insurance defaults to $1,800 per year. PMI of 0.55% applies when the down payment is under 20%.
             </li>
             <li>
-              State income tax uses simplified 2026 structures. Local taxes are omitted.
+              State income tax uses simplified 2026 structures. Local income taxes (for example New York City or certain Maryland counties) are omitted.
             </li>
           </ul>
+
           <h2 className="pt-4 text-xl font-semibold text-foreground">How to use the tools</h2>
           <p>
             Start with the{" "}
             <Link to="/" className="text-primary underline-offset-4 hover:underline">
               mortgage payment calculator
             </Link>{" "}
-            if you already have a loan amount. Use affordability if you are still
-            sizing a budget, and take-home pay if you want net income rather than
-            gross. Share results from any calculator, or reset to the defaults.
+            if you already know the loan amount. Use the affordability calculator if you are still deciding how much house you can carry. Use the take-home pay calculator when you want to budget from net income rather than gross. Every tool lets you share results or reset to the defaults.
           </p>
+
           <p>
-            Read the{" "}
+            Please read the{" "}
             <Link to="/disclaimer" className="text-primary underline-offset-4 hover:underline">
               disclaimer
             </Link>{" "}
