@@ -65,6 +65,22 @@ function Home() {
               text: "Federal brackets, standard deductions, and the Social Security wage base follow published 2026 IRS figures. State taxes are simplified 2026 estimates.",
             },
           },
+          {
+            "@type": "Question",
+            name: "Does the payment include property taxes and insurance?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "The main payment calculator shows principal and interest only. The affordability calculator includes estimated property tax, homeowners insurance, and PMI when applicable.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can I use these calculators for a refinance?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Enter your remaining loan balance as the loan amount and the new interest rate and term you are considering. The tools work the same way for purchase or refinance scenarios.",
+            },
+          },
         ],
       },
     ],
@@ -164,6 +180,18 @@ function Faq() {
     {
       q: "How current are the tax figures?",
       a: "Federal brackets, standard deductions, and FICA use published 2026 IRS and SSA amounts. State taxes are simplified 2026 estimates and omit most local income taxes.",
+    },
+    {
+      q: "What is a good debt-to-income (DTI) ratio?",
+      a: "Most conventional lenders prefer a total DTI of 36% or lower. Some programs allow up to 43% or higher with compensating factors. The affordability calculator helps you stay inside common limits.",
+    },
+    {
+      q: "Can I use these tools for a refinance?",
+      a: "Yes. Enter your current remaining balance as the loan amount and the new rate and term you are considering. The calculators work the same for purchase or refinance planning.",
+    },
+    {
+      q: "Why do the results differ from a lender quote?",
+      a: "Lenders include points, fees, credit-based pricing, and sometimes different escrow estimates. These tools give a clean principal-and-interest or affordability estimate for planning — always confirm with a licensed lender.",
     },
   ];
 
