@@ -9,7 +9,7 @@ export const Route = createFileRoute("/privacy")({
       {
         name: "description",
         content:
-          "Wellstead calculators run in your browser. We do not require accounts. This policy explains what limited data a website visit may involve.",
+          "Wellstead calculators run in your browser. We do not require accounts. This policy explains what limited data a website visit may involve and how advertising may work in the future.",
       },
     ],
   }),
@@ -25,51 +25,70 @@ function PrivacyPage() {
         <p className="mt-3 text-sm text-muted-foreground">Last updated: September 14, 2026</p>
         <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            {SITE.name} (“we”) provides mortgage, affordability, and take-home pay
-            calculators. This policy describes how information is handled when you use
-            the site.
+            {SITE.name} (“we”, “us”, or “our”) provides free US mortgage, affordability, and take-home pay calculators. This Privacy Policy explains how we handle information when you visit or use the site.
           </p>
-          <h2 className="pt-2 text-xl font-semibold text-foreground">Calculations stay on your device</h2>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">1. Calculations stay on your device</h2>
           <p>
-            Loan amounts, incomes, debts, and similar inputs are processed in your
-            browser. We do not require an account, and we do not use those inputs to
-            create a user profile or to underwrite credit.
+            All loan amounts, incomes, debts, interest rates, and similar inputs are processed entirely in your browser. We do not require an account, we do not store your personal financial inputs on our servers, and we do not use those inputs to create a user profile or to underwrite credit.
           </p>
-          <h2 className="pt-2 text-xl font-semibold text-foreground">Information a visit may create</h2>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">2. Information a visit may create</h2>
           <p>
-            Like most websites, our host and content delivery network may receive
-            standard technical data such as IP address, browser type, referring URL,
-            and pages requested. That information is used to operate, secure, and
-            diagnose the service.
+            Like most websites, our hosting provider and content delivery network may automatically receive standard technical data such as:
           </p>
-          <h2 className="pt-2 text-xl font-semibold text-foreground">Cookies and advertising</h2>
+          <ul className="list-disc space-y-1 pl-5">
+            <li>IP address</li>
+            <li>Browser type and version</li>
+            <li>Device type and operating system</li>
+            <li>Referring URL and pages requested</li>
+            <li>Date and time of the request</li>
+          </ul>
           <p>
-            The calculators themselves do not depend on advertising cookies. If ads or
-            analytics are added later, this policy will be updated to describe them. You
-            can control cookies through your browser.
+            This information is used only to operate, secure, diagnose, and improve the service. It is not used to identify you personally for marketing purposes.
           </p>
-          <h2 className="pt-2 text-xl font-semibold text-foreground">Sharing results</h2>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">3. Cookies, analytics, and advertising</h2>
           <p>
-            If you use Share, your device’s share sheet or clipboard may include the
-            numbers you entered and a link with those values in the page address. Anyone
-            with that link can see the same estimate. Do not share a link if it contains
-            information you want to keep private.
+            The calculators themselves do not require advertising cookies to function. In the future we may add:
           </p>
-          <h2 className="pt-2 text-xl font-semibold text-foreground">Children</h2>
+          <ul className="list-disc space-y-1 pl-5">
+            <li>Analytics tools (for example Google Analytics) to understand how the site is used</li>
+            <li>Advertising networks (such as Google AdSense or similar) to support the free tools</li>
+          </ul>
           <p>
-            The site is intended for adults making housing or pay decisions. It is not
-            directed at children under 13.
+            If we add analytics or advertising, this Privacy Policy will be updated to describe the specific services, the data they collect, and how you can control them. You can already manage cookies through your browser settings.
           </p>
-          <h2 className="pt-2 text-xl font-semibold text-foreground">Changes</h2>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">4. Sharing results</h2>
           <p>
-            We may update this policy as the product changes. The date above will
-            change when we do. Questions about privacy can be sent through whatever
-            contact method is published on the site at the time.
+            If you use the Share feature, your device’s share sheet or clipboard may include the numbers you entered and a link that contains those values in the page address. Anyone with that link can see the same estimate. Do not share a link if it contains information you want to keep private.
           </p>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">5. Third-party services</h2>
+          <p>
+            We may use third-party providers for hosting, content delivery, and (in the future) analytics or advertising. Those providers have their own privacy policies. We only share the limited technical data necessary for them to perform their services.
+          </p>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">6. Children</h2>
+          <p>
+            The site is intended for adults making housing or pay decisions. It is not directed at children under 13, and we do not knowingly collect personal information from children under 13.
+          </p>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">7. Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy as the product or applicable law changes. The “Last updated” date at the top will change when we do. Continued use of the site after changes means you accept the updated policy.
+          </p>
+
+          <h2 className="pt-2 text-xl font-semibold text-foreground">8. Contact</h2>
+          <p>
+            If you have questions about this Privacy Policy, you can reach us through the contact method published on the About page (or the contact details shown on the site at the time of your request).
+          </p>
+
           <p>
             See also the{" "}
             <Link to="/disclaimer" className="text-primary underline-offset-4 hover:underline">
-              disclaimer
+              Disclaimer
             </Link>
             .
           </p>
