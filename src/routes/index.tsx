@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },
-      { name: "keywords", content: "US mortgage calculator, monthly payment calculator, home affordability calculator, take-home pay calculator, 2026 tax brackets" },
+      { name: "keywords", content: "US mortgage calculator, monthly payment calculator, home affordability calculator, take-home pay calculator, 2026 tax brackets, debt to income ratio" },
     ],
   }),
   component: Home,
@@ -101,6 +101,7 @@ function Home() {
           <AffordabilityCalculator />
           <div className="h-8 sm:h-12" aria-hidden="true" />
           <TakeHomeCalculator />
+          <Guides />
           <Faq />
         </div>
       </main>
@@ -164,6 +165,51 @@ function JumpNav() {
         ))}
       </div>
     </nav>
+  );
+}
+
+function Guides() {
+  return (
+    <section className="max-w-3xl space-y-12" aria-labelledby="guides-heading">
+      <div>
+        <h2 id="guides-heading" className="text-2xl font-semibold tracking-tight">
+          Helpful guides
+        </h2>
+        <p className="mt-2 text-muted-foreground">
+          Short explanations to help you use the calculators more effectively.
+        </p>
+      </div>
+
+      <article className="space-y-3">
+        <h3 className="text-xl font-semibold tracking-tight">How a mortgage payment is calculated</h3>
+        <p className="text-muted-foreground leading-relaxed">
+          A fixed-rate mortgage payment is based on the loan amount, the annual interest rate, and the loan term. The rate is divided by 12 to get a monthly rate, and the term is converted into months. The standard amortization formula then produces a fixed monthly principal-and-interest payment for the life of the loan.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Making extra principal payments reduces the outstanding balance faster. Because interest is charged on the remaining balance, paying extra lowers total interest and can shorten the loan. The payment calculator on this page lets you see both the base payment and the effect of extra payments, including a year-by-year amortization summary.
+        </p>
+      </article>
+
+      <article className="space-y-3">
+        <h3 className="text-xl font-semibold tracking-tight">What debt-to-income (DTI) means</h3>
+        <p className="text-muted-foreground leading-relaxed">
+          Debt-to-income ratio is the percentage of your gross monthly income that goes toward debt payments. Lenders look at two versions: front-end DTI (housing costs only) and back-end DTI (housing plus other monthly debts such as car loans, student loans, and minimum credit card payments).
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Conventional loans often prefer a back-end DTI near 36% or lower. FHA and some qualified mortgages may allow up to 43% or higher when other factors are strong. The affordability calculator on this site uses the DTI limit you choose to estimate a realistic home price after accounting for property tax, insurance, PMI, and other debts.
+        </p>
+      </article>
+
+      <article className="space-y-3">
+        <h3 className="text-xl font-semibold tracking-tight">Using take-home pay for a housing budget</h3>
+        <p className="text-muted-foreground leading-relaxed">
+          Gross income is what lenders primarily use for DTI calculations, but your actual monthly cash flow is based on take-home pay after taxes. Estimating federal income tax, Social Security, Medicare, and state tax helps you see how much of your paycheck is realistically available for a housing payment and other expenses.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          The take-home pay calculator uses 2026 federal brackets and simplified state tax estimates. It is designed for planning, not for tax filing. Local taxes, credits, and withholding elections can change the final number, so treat the result as a useful estimate rather than an exact figure.
+        </p>
+      </article>
+    </section>
   );
 }
 
