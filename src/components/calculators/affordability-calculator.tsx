@@ -225,16 +225,13 @@ export function AffordabilityCalculator() {
 
       <Education>
         <p>
-          Lenders usually cap housing costs plus other monthly debts at a share of
-          gross income (debt-to-income, or DTI). Conventional loans often use about
-          36%; FHA and some qualified mortgages go up to 43%. This calculator solves
-          for the highest home price whose full monthly housing cost stays within that
-          budget after your other debts.
+          Lenders usually look at your debt-to-income ratio (DTI) — the share of gross monthly income that goes to housing costs plus other monthly debts. Conventional loans commonly target around 36%. FHA and some qualified mortgages may allow up to 43% or a bit higher with compensating factors. This calculator works backward from your chosen DTI limit to find the highest home price whose full monthly housing cost stays inside that budget after your other debts.
         </p>
         <p>
-          Property tax defaults to 1.1% of home value, a common U.S. average; insurance
-          defaults to $1,800 per year. Local taxes, HOA rules, credit, and reserves
-          will change what a lender actually approves.
+          The full housing payment used here includes principal and interest, estimated property tax, homeowners insurance, PMI (when the down payment is under 20%), and any HOA dues you enter. Property tax defaults to 1.1% of home value (a common U.S. average) and insurance defaults to $1,800 per year. These are planning assumptions — your actual tax rate, insurance quote, and lender guidelines will differ.
+        </p>
+        <p>
+          Use the result as a realistic starting point, not a guarantee of approval. Credit score, reserves, employment history, and the specific loan program all affect what a lender will ultimately approve.
         </p>
       </Education>
     </section>
